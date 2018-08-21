@@ -4,7 +4,7 @@ import { Provider } from 'mobx-react'
 import { injectGlobal } from 'styled-components'
 
 import App from './app'
-
+import Button from './components/button'
 injectGlobal`
     html {
         height: 100%;
@@ -21,7 +21,7 @@ injectGlobal`
 
 render(
     <Provider>
-        <App />
+        <Button />
     </Provider>,
     document.getElementById('root')
 )
